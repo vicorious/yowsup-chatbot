@@ -1,0 +1,5 @@
+python-dateutil
+argparse
+python-axolotl>=0.1.39
+six
+pyreadline

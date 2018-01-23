@@ -1,0 +1,79 @@
+####################################### PREPARACION ###################################################################
+
+#Las pruebas fueron hechas en un sistema Ubuntu y en un Windows 7 64 bits
+# https://iamjagjeetubhi.wordpress.com/2017/09/21/how-to-use-yowsup-the-python-whatsapp-library-in-ubuntu/
+
+#Insumos para yowsup
+sudo apt-get install python-dateutil
+sudo apt-get install python-setuptools
+sudo apt-get install python-dev
+sudo apt-get install libevent-dev
+sudo apt-get install ncurses-dev
+
+#Para imagenes
+easy_install Pillow
+
+#Descargamos el codigo de yowsup
+
+git clone git://github.com/tgalal/yowsup.git
+
+cd yowsup
+
+sudo python setup.py install
+
+#Para poder siempre ejecutarlo con una version nueva, es necesario realizar los siguientes pasos
+
+#Descargamos 
+https://github.com/mgp25/classesMD5-64
+
+#Descarga la ultima apk de whatsapp
+https://www.whatsapp.com/android/
+
+#Copia el apk donde tengas el archivo classes.exe, y luego
+
+#base64 MD5 raw encoded
+
+classes.exe file.apk
+
+#Nos retornara algo como esto
+
+Version: 2.17.344
+ClassesDex: OxVSHnBDYNBZmSiYzwF9+A==
+
+#en el archivo env_android (yowsup/env/env_android.py), reemplacemos
+
+_MD5_CLASSES
+
+#Luego volvemos a compilar
+
+python setup.py build
+
+############################### REGISTRO #############################################################################
+
+
+
+#Obtener codigo
+python yowsup-cli registration --requestcode sms --phone 573163973777 --cc 57 --mcc 732 --mnc 001 -E android
+
+#Registrarse
+python yowsup-cli registration --register 559-129 --phone 573163973777 --cc 57 -E android
+
+#Path ejemplos
+yowsup-cli demos --yowsup --config aqui/va/el/path/config.config
+
+#Debemos registrarnos con el ambiente Android
+#Debemos chatear con el ambiente s40
+
+#En el archivo env.py
+# La linea similar a esta DEFAULT = "ambiente"
+# Reemplazar "ambiente" por android para registrar el numero
+# o Reemplazar "ambiente" por s40 para chatear (DESPUES DE HABER REGISTRADO EL NUMERO)
+
+
+#Para loguearnos,  despues del comando "yowsup-cli demos --yowsup --config aqui/va/el/path/config.config"
+
+/L
+
+#para enviar mensajes
+
+/message send 573014300678 "re bien mk, esa era, yo hoy hablo ya con don Anibal, anoche me quede dormido"

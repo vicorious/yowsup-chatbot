@@ -1,0 +1,84 @@
+#Yowsup envio de mensajes y recepcion
+
+#Luego de tener todos los componentes correctamente instalados de yowsup, vamos a mostrar como enviamos mensajes
+#Primero hay que Loguearnos:
+
+#Cuando enviamos el mensaje de activacion
+
+#mcc Mobile Country code
+#mnc Mobile Network code
+#cc  Country Code
+
+#Obtener codigo
+python yowsup-cli registration --requestcode sms --phone ccnumerodecelular --cc 57 --mcc 732 --mnc 001 -E android
+
+INFO:yowsup.common.http.warequest:b'{"login":"573053178495","status":"sent","len
+gth":6,"method":"sms","retry_after":65,"sms_wait":65,"voice_wait":65}\n'
+status: b'sent'
+login: b'573053178495'
+method: b'sms'
+retry_after: 65
+length: 6
+
+#Cuando lo registramos
+
+#Registrarse
+python yowsup-cli registration --register xxx-xxx --phone ccnumerodecelular --cc 57 -E android
+
+Copyright (c) 2012-2016 Tarek Galal
+http://www.openwhatsapp.org
+
+This software is provided free of charge. Copying and redistribution is
+encouraged.
+
+If you appreciate this software and you would like to support future
+development please consider donating:
+http://openwhatsapp.org/yowsup/donate
+
+
+INFO:yowsup.common.http.warequest:b'{"status":"ok","login":"573053178495","type"
+:"new","edge_routing_info":"CAA=","chat_dns_domain":"sl","pw":"BrS+AoCX4FQh4elad
+HVB5tEwwUo=","expiration":4444444444.0,"kind":"free","price":"$0.99","cost":"0.9
+9","currency":"USD","price_expiration":1516113723}\n'
+cost: b'0.99'
+login: b'573053178495'
+status: b'ok'
+pw: b'BrS+AoCX4FQh4eladHVB5tEwwUo='
+price: b'$0.99'
+kind: b'free'
+type: b'new'
+expiration: 4444444444.0
+currency: b'USD'
+price_expiration: 1516113723
+
+#Cambiemos el password en el archivo config.config y el numero de telefono
+
+## Actual config starts below ##
+cc=57
+phone=573053178495
+password=BrS+AoCX4FQh4eladHVB5tEwwUo=
+
+#Ejemplos
+python yowsup-cli demos --yowsup --config aqui/va/el/path/config.config
+
+cli@root/yowsup/path/final> /L //con esto nos logueamos
+
+[offline]:/L
+INFO:yowsup.layers.axolotl.layer_control:Axolotl layer is generating keys
+Auth: Logged in!
+
+#Para enviar un mensaje plano (No es necesario tenerlos agregados, es mas, el celular puede estar apagado)
+
+/message send ccnumerocelular "El mensaje es este, de prueba"
+
+#Cuando recibimos un mensaje es tipo
+
+[573014300678@s.whatsapp.net(03-01-2018 14:54)]:[0A040C9EC3604C5AD5F23D5B6BC637CE]       como estas bot?
+
+#Obtenemos el texto "como estas bot?" con expresiones regulares EJM.
+
+\[\d+\@.+?\((.+)?\).+?](.+) -> En el grupo 2, tenemos el mensaje "como estas bot" 
+
+#Profile
+/profile setStatus "Operative"
+/profile setPicture "/media/public/propic.png"
