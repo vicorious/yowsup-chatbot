@@ -148,7 +148,7 @@ Luego en el Path, las agregamos (**No olvides separalas por ";" hasta el final**
 
 **IMPORTANTE**
 
-### Instrucciones Unix
+## Instrucciones Unix
 
 1. Primero, debemos decargar **https://github.com/mgp25/classesMD5-64** Si no es el EXE (No estamos en Windows). Copia el contenido del archivo **[archivo](https://github.com/mgp25/classesMD5-64/edit/master/dexMD5.py)** en otro archivo **MD5.py** 
 
@@ -230,6 +230,18 @@ yowsup-master\yowsup\env\ **env.py** (Si env.py)
 ```password=el_codigo_pw_sin_el_b```
 
 * "el_codigo_pw_sin_el_b" = **Es decir lo que esta adentro de las comillas y despues del b'**
+
+**Es muy importante tener en cuenta esto**
+
+* Despues de este paso, debemos regresar al archivo **env.py** y reemplazar el default de nuevo:
+
+Estaba asi:
+
+```DEFAULT = "android```
+
+Y debe ir ahora:
+
+```DEFAULT = "s40```
 
 * Luego ya simplemente utilizamos los comando para los ejemplos, como por ejemplo:
 
