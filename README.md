@@ -138,11 +138,130 @@ Si tienes problemas, este link pudo solventarlos
 
 * **[Link](https://stackoverflow.com/questions/45957321/python-error-command-c-program-files-x86-microsoft-visual-studio-14-0-vc)**
 
-Luego en el Path, las agregamos (**No olvides separalas por ";" hasta el final)
+Luego en el Path, las agregamos (**No olvides separalas por ";" hasta el final**)
 
 * Ejemplo:
 
-* **PATH** = *VCINSTALLDIR;*MINGW-HOME*;*PYTHON_HOME* **;**
+* **PATH** = *VCINSTALLDIR;MINGW-HOME;PYTHON_HOME **;**
+
+### Cuando este todo instalado (El python setup.py install sea correcto)
+
+**IMPORTANTE*
+
+### Instrucciones Unix
+
+1. Primero, debemos decargar **https://github.com/mgp25/classesMD5-64** Si no es el EXE (No estamos en Windows). Copia el contenido del archivo **[archivo](https://github.com/mgp25/classesMD5-64/edit/master/dexMD5.py)** en otro archivo **MD5.py** 
+
+2. Ingresamos a la ruta donde guardamos el archivo
+3. Ingresamos a descargar la ultima **apk** de Whatsapp [Aqui](https://www.whatsapp.com/android/) (Descargada la ponemos en la misma ruta de nuestro archivo **MD5.py**)
+4. Ejecutamos el comando 
+```python MD5.py WhatsApp.apk```
+5. Obtenemos algo como:
+```Version: 2.17.344 classesDex: OxVSHnBDYNBZmSiYzwF9+A==```
+
+## Instrucciones Windows
+
+1. Primero, debemos decargar **https://github.com/mgp25/classesMD5-64** (El .exe)
+2. Ingresamos a la ruta donde guardamos el archivo
+3. Ingresamos a descargar la ultima **apk** de Whatsapp [Aqui](https://www.whatsapp.com/android/) (Descargada la ponemos en la misma ruta de nuestro archivo **Classes.exe**)
+4. Ejecutamos el comando 
+```Classes.exe WhatsApp.apk```
+5. Obtenemos algo como:
+```Version: 2.17.344 classesDex: OxVSHnBDYNBZmSiYzwF9+A==```
+
+## Instrucciones ambos (Unix y Windows)
+
+Despues cuando obtenemos el *classesDex*
+
+En la URL (Donde descargamos nuestro codigo Yowsup):
+yowsup-master\yowsup\env\ **env_android.py** (Si env_android.py)
+
+Reemplazamos la linea por el classesDex que obtuvimos
+
+```_MD5_CLASSES = classesDex```
+
+Y la linea VERSION por el version obtenido (El que esta arriba del **classesDex**)
+
+```_VERSION = Version```
+
+Y luego volvemos a compilar
+
+```python setup.py build```
+
+## Registro
+
+**IMPORTANTE**
+
+* Antes del registro, debemos acceder de nuevo a la URL donde descargamos localmente nuestro codigo Yowsup:
+
+yowsup-master\yowsup\env\ **env.py** (Si env.py)
+
+* En la Linea **DEFAULT** del archivo, debemos colocal **android**
+
+```DEFAULT = "android```
+
+* Luego si vamos a solicitar nuestro codigo SMS o VOICE
+
+# Obtener codigo (Cuidado, donde dice sms|voice TIENE QUE IR UNO SOLAMENTE, es para el ejemplo, si es SMS (quitemos el voice y viceversa))
+
+```python yowsup-cli registration --requestcode sms|voice --phone ccnumerodecelular --cc xx --mcc xxx --mnc xxx -E android```
+
+* El CC  es el country code        : [Link](https://en.wikipedia.org/wiki/List_of_country_calling_codes) *Importante va sin el "+"*
+* El MCC es el mobile country code : [Link](https://en.wikipedia.org/wiki/Mobile_country_code)
+* El MNC es el mobile network code : [Link](https://en.wikipedia.org/wiki/Mobile_country_code)
+
+**Busca el de tu pais, y empresa telefonica correspondiente**
+
+* Luego cuando obtengamos nuestro numero de 7 digitos (Incluido el "-"), utilizamos el siguiente comando (He incluimos el numero de celular y el codigo que nos retorno):
+
+```python yowsup-cli registration --register xxx-xxx --phone ccnumerodecelular --cc xx -E android ```
+
+* Luego si todo sale bien, obtendras algo como esto (Salen muchas mas lineas, pero lo importante es la siguiente):
+
+```pw: b'Bgasdjasdhasdaser56='```
+
+ * Este es nuestro password utilizado para poder realizar un correcto Logueo en Whatsapp.
+
+* Ahora, crearemos un archivo llamado **config.config** en la raiz de nuestro codigo yowsup (yowsup-master\config.config) e ingresaremos las siguientes lineas:
+
+```## Actual config starts below ##```
+```cc=xx```
+```phone=xxnumerodecelular```
+```password=el_codigo_pw_sin_el_b```
+
+* "el_codigo_pw_sin_el_b" = **Es decir lo que esta adentro de las comillas y despues del b'**
+
+* Luego ya simplemente utilizamos los comando para los ejemplos, como por ejemplo:
+
+```python yowsup-cli demos --yowsup --config aqui/va/el/path/config.config```
+
+O el echoclient
+
+``` python yowsup-cli echoclient --yowsup --config aqui/va/el/path/config.config ```
+
+O el sendclient
+
+``` python yowsup-cli sendclient --yowsup --config aqui/va/el/path/config.config ```
+
+Nos logueamos con:
+
+* [offline]:/L
+* Auth: Logged in!
+* [connected]:
+
+**Para enviar un mensaje**
+
+``` /message send ccnumerocelular "El mensaje es este, de prueba" ```
+
+**Y los recibimos tipo**
+
+``` [ccnumerodecelular@s.whatsapp.net(03-01-2018 14:54)]:[0A040C9EC3604C5AD5F23D5B6BC637CE]       como estas? ```
+
+
+
+### Lo nuevo (Chatbot parte Python)
+
+
 
 # Gracias
 
