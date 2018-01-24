@@ -51,9 +51,9 @@ Tu necesitas tener instaladas las cabeceras de python (probablemente vienen desd
 python setup.py install
 ```
 
- * **[Tenemos un tutorial] bastante explicado para Ubuntu linux (https://iamjagjeetubhi.wordpress.com/2017/09/21/how-to-use-yowsup-the-python-whatsapp-library-in-ubuntu/) (Gracias a su autor Jagjeet Singh)
+ * **[Tenemos un tutorial bastante explicado para Ubuntu linux] (https://iamjagjeetubhi.wordpress.com/2017/09/21/how-to-use-yowsup-the-python-whatsapp-library-in-ubuntu/) ** (Gracias a su autor Jagjeet Singh)
 
-Because of a bug with python-dateutil package you might get permission error for some dateutil file called requires.txt when you use yowsup (see [this bug report](https://bugs.launchpad.net/dateutil/+bug/1243202)) to fix you'll need to chmod 644 that file.
+Hya veces el paquete python-dateutil nos da un error referente a los permisos de ejecucion en yowsup (Mira [Este reporte de bug](https://bugs.launchpad.net/dateutil/+bug/1243202)) Para arreglarlo, es mediante el comando chmod 644 a un archivo .txt que hace referencia el bug.
 
 ### FreeBSD (*BSD)
 Tu necesitas tener instalado: py27-pip-7.1.2(+), py27-sqlite3-2.7.11_7(+), y luego correr
@@ -97,6 +97,29 @@ Y luego si podemos lanzar de nuevo el comando
 
 - ```python setup.py install```
 
+# Freeze
+
+Si usas el comando 
+
+- ```pip freeze```
+
+Sabras los paquetes que tienes instalados, voy a mostrarles las versiones de los paquetes que tengo y tambien su version actual:
+
+1. pycrypto==2.6.1
+2. pyreadline==2.1
+3. python-axolotl==0.1.39
+4. python-axolotl-curve25519==0.1
+5. python-dateutil==2.6.1
+6. pillow==5.0.0
+7. yowsup2==2.5.0
+8. pip version 7.1.2
+
+Y la version de Python es:
+
+- Python 3.5.1
+
+
+
 # Gracias
 
 Gracias especiales a las personas sobre todo, que desean mantener el proyecto, y realizar aportes constructivos.
@@ -106,6 +129,9 @@ Porfavor **[Lee esto](https://github.com/tgalal/yowsup/wiki/Yowsup-development,-
 Gracias Tgalal!
 
 
-# Licensia:
+# Licencia:
 
 Desde Enero 1, 2015 yowsup esta licenciado bajo GPLv3+: http://www.gnu.org/licenses/gpl-3.0.html.
+
+==========================================================
+
