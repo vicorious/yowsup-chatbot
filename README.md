@@ -144,13 +144,13 @@ Luego en el Path, las agregamos (**No olvides separalas por ";" hasta el final**
 
 * **PATH** = *VCINSTALLDIR;MINGW-HOME;PYTHON_HOME* **;**
 
-### Cuando este todo instalado (El python setup.py install sea correcto)
+### Cuando este todo instalado (El ```python setup.py install``` sea correcto)
 
 **IMPORTANTE**
 
 ## Instrucciones Unix
 
-1. Primero, debemos decargar **https://github.com/mgp25/classesMD5-64** Si no es el EXE (No estamos en Windows). Copia el contenido del archivo **[archivo](https://github.com/mgp25/classesMD5-64/edit/master/dexMD5.py)** en otro archivo **MD5.py** 
+1. Primero, debemos descargar **https://github.com/mgp25/classesMD5-64** Si no es el EXE (No estamos en Windows). Copia el contenido del archivo **[archivo](https://github.com/mgp25/classesMD5-64/edit/master/dexMD5.py)** en otro archivo **MD5.py** 
 
 2. Ingresamos a la ruta donde guardamos el archivo
 3. Ingresamos a descargar la ultima **apk** de Whatsapp [Aqui](https://www.whatsapp.com/android/) (Descargada la ponemos en la misma ruta de nuestro archivo **MD5.py**)
@@ -173,7 +173,7 @@ Luego en el Path, las agregamos (**No olvides separalas por ";" hasta el final**
 
 Despues cuando obtenemos el *classesDex*
 
-En la URL (Donde descargamos nuestro codigo Yowsup):
+En la URL (ruta local de tu pc) (Donde descargamos nuestro codigo Yowsup):
 yowsup-master\yowsup\env\ **env_android.py** (Si env_android.py)
 
 Reemplazamos la linea por el classesDex que obtuvimos
