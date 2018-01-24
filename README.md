@@ -103,7 +103,7 @@ Si usas el comando
 
 - ```pip freeze```
 
-Sabras los paquetes que tienes instalados, voy a mostrarles las versiones de los paquetes que tengo y tambien su version actual:
+Sabras los paquetes que tienes instalados, voy a mostrarles las versiones de los paquetes que tenemos y tambien su version actual:
 
 1. pycrypto==2.6.1
 2. pyreadline==2.1
@@ -111,12 +111,31 @@ Sabras los paquetes que tienes instalados, voy a mostrarles las versiones de los
 4. python-axolotl-curve25519==0.1
 5. python-dateutil==2.6.1
 6. pillow==5.0.0
-7. yowsup2==2.5.0
-8. pip version 7.1.2
+7. protobuf==3.5.1
+8. yowsup2==2.5.0
+9. pip version 7.1.2
 
 Y la version de Python es:
 
 - Python 3.5.1
+
+# Path
+
+Nuestro path, debe quedar configurado de la siguiente manera (La instalacion fue hecha en Windows, si, en Windows, el mas complejo).
+
+1. Nuestro **MINGW-HOME**  = *C:\MinGW*
+2. Nuestro **PYTHON_HOME** = *C:\Users\user\AppData\Local\Programs\Python\Python35-32\*
+
+Es posible que pida igualmente alguna distribucion de C++ Compiler de Visual Studio.
+
+*3.(Opcional)*  **VCINSTALLDIR** = *C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC*
+
+* **[Este es la 2010](https://www.microsoft.com/es-co/download/confirmation.aspx?id=5555)**
+
+Si tienes problemas, este link pudo solventarlos
+
+* **[Link](https://stackoverflow.com/questions/45957321/python-error-command-c-program-files-x86-microsoft-visual-studio-14-0-vc)**
+
 
 
 
