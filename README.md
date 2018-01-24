@@ -29,8 +29,8 @@ Yowsup es una libreria Python que nos da las funcionalidades de whastapp.
 
  - Requiere python2.6+, o python3.0 +
  - Requiere los paquetes python: python-dateutil,
- - Required los paquetes para encripcion lado a lado: protobuf, pycrypto, python-axolotl-curve25519
- - Required los paquetes python para la CLI: argparse, readline (o pyreadline para windows), pillow (para enviar imagenes)
+ - Requiere los paquetes para encripcion lado a lado: protobuf, pycrypto, python-axolotl-curve25519
+ - Requiere los paquetes python para la CLI: argparse, readline (o pyreadline para windows), pillow (para enviar imagenes)
 
 Puedes instalar usando setup.py para hacerlo con todas las dependencias, usar pip:
 
