@@ -5,6 +5,10 @@
 ## Updates (March 23, 2017)
 Yowsup v2.5.2 is out, See [release notes](https://github.com/tgalal/yowsup/releases/tag/v2.5.2)
 
+
+## Deseo darle las gracias Inmensas a Tgalal por realizar este excelente producto y por un soporte totalmente integro
+
+
 ==========================================================
 
 ## Yowsup opened WhatsApp service under platforms!
