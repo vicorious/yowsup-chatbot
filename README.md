@@ -1,9 +1,9 @@
-# Yowsup 2 [![Build Status](https://travis-ci.org/tgalal/yowsup.svg?branch=master)](https://travis-ci.org/tgalal/yowsup) [![Join the chat at https://gitter.im/tgalal/yowsup](https://badges.gitter.im/tgalal/yowsup.svg)](https://gitter.im/tgalal/yowsup?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# Yowsup 2 [![Estado de la version](https://travis-ci.org/tgalal/yowsup.svg?branch=master)](https://travis-ci.org/tgalal/yowsup) [![Join the chat at https://gitter.im/tgalal/yowsup](https://badges.gitter.im/tgalal/yowsup.svg)](https://gitter.im/tgalal/yowsup?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 
 
-## Updates (March 23, 2017)
-Yowsup v2.5.2 is out, See [release notes](https://github.com/tgalal/yowsup/releases/tag/v2.5.2)
+## Actualizaciones (Marzo 23, 2017)
+Yowsup v2.5.2 esta lanzado, Observa(https://github.com/tgalal/yowsup/releases/tag/v2.5.2)
 
 
 ## Deseo darle las gracias Inmensas a Tgalal por realizar este excelente producto y por un soporte totalmente integro
