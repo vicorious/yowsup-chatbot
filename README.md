@@ -198,7 +198,7 @@ yowsup-master\yowsup\env\ **env.py** (Si env.py)
 
 * En la Linea **DEFAULT** del archivo, debemos colocal **android**
 
-```DEFAULT = "android```
+```DEFAULT = "android"```
 
 * Luego si vamos a solicitar nuestro codigo SMS o VOICE
 
