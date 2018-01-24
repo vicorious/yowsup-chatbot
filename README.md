@@ -2,7 +2,7 @@
 
 
 
-## Actualizaciones (Marzo 23, 2017)
+## Actualizaciones (Diciembre 30, 2017)
 Yowsup v2.5.2 esta lanzado, Observa(https://github.com/tgalal/yowsup/releases/tag/v2.5.2)
 
 
@@ -10,7 +10,7 @@ Yowsup v2.5.2 esta lanzado, Observa(https://github.com/tgalal/yowsup/releases/ta
 
 Para apoyar su proyecto, puedes donar aqui <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Z9KKEUVYEY6BN" target="_blank"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" /></a>
 
-##Gracias de nuevo amigo
+## Gracias de nuevo amigo
 
 ==========================================================
 
