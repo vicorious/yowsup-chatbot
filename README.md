@@ -142,7 +142,7 @@ Luego en el Path, las agregamos (**No olvides separalas por ";" hasta el final**
 
 * Ejemplo:
 
-* **PATH** = *VCINSTALLDIR;MINGW-HOME;PYTHON_HOME **;**
+* **PATH** = *VCINSTALLDIR;MINGW-HOME;PYTHON_HOME* **;**
 
 ### Cuando este todo instalado (El python setup.py install sea correcto)
 
