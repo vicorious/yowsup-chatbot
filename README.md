@@ -14,7 +14,7 @@ Para apoyar su proyecto, puedes donar aqui <a href="https://www.paypal.com/cgi-b
 
 ==========================================================
 
-## Yowsup opened WhatsApp service under platforms!
+## Yowsup es un servicio abierto para la plataforma Whatsapp!
 
 Yowsup es una libreria Python que nos da las funcionalidades de whastapp.
 
@@ -51,7 +51,7 @@ Tu necesitas tener instaladas las cabeceras de python (probablemente vienen desd
 python setup.py install
 ```
 
-#Tenemos un tutorial bastante explicado para Ubuntu linux https://iamjagjeetubhi.wordpress.com/2017/09/21/how-to-use-yowsup-the-python-whatsapp-library-in-ubuntu/ (Gracias a su autor Jagjeet Singh)
+ * **[Tenemos un tutorial] bastante explicado para Ubuntu linux (https://iamjagjeetubhi.wordpress.com/2017/09/21/how-to-use-yowsup-the-python-whatsapp-library-in-ubuntu/) (Gracias a su autor Jagjeet Singh)
 
 Because of a bug with python-dateutil package you might get permission error for some dateutil file called requires.txt when you use yowsup (see [this bug report](https://bugs.launchpad.net/dateutil/+bug/1243202)) to fix you'll need to chmod 644 that file.
 
