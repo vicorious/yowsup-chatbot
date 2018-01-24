@@ -51,7 +51,7 @@ Tu necesitas tener instaladas las cabeceras de python (probablemente vienen desd
 python setup.py install
 ```
 
- * **[Tenemos un tutorial bastante explicado para Ubuntu linux] (https://iamjagjeetubhi.wordpress.com/2017/09/21/how-to-use-yowsup-the-python-whatsapp-library-in-ubuntu/)** (Gracias a su autor Jagjeet Singh)
+ * **[Tenemos un tutorial bastante explicado para Ubuntu linux](https://iamjagjeetubhi.wordpress.com/2017/09/21/how-to-use-yowsup-the-python-whatsapp-library-in-ubuntu/)** (Gracias a su autor Jagjeet Singh)
 
 Hya veces el paquete python-dateutil nos da un error referente a los permisos de ejecucion en yowsup (Mira [Este reporte de bug](https://bugs.launchpad.net/dateutil/+bug/1243202)) Para arreglarlo, es mediante el comando chmod 644 a un archivo .txt que hace referencia el bug.
 
