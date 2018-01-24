@@ -1,6 +1,6 @@
 # Yowsup 2 [![Build Status](https://travis-ci.org/tgalal/yowsup.svg?branch=master)](https://travis-ci.org/tgalal/yowsup) [![Join the chat at https://gitter.im/tgalal/yowsup](https://badges.gitter.im/tgalal/yowsup.svg)](https://gitter.im/tgalal/yowsup?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Z9KKEUVYEY6BN" target="_blank"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" /></a>
+
 
 ## Updates (March 23, 2017)
 Yowsup v2.5.2 is out, See [release notes](https://github.com/tgalal/yowsup/releases/tag/v2.5.2)
@@ -8,6 +8,9 @@ Yowsup v2.5.2 is out, See [release notes](https://github.com/tgalal/yowsup/relea
 
 ## Deseo darle las gracias Inmensas a Tgalal por realizar este excelente producto y por un soporte totalmente integro
 
+Para apoyar su proyecto, puedes donar aqui <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Z9KKEUVYEY6BN" target="_blank"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" /></a>
+
+#Gracias de nuevo
 
 ==========================================================
 
