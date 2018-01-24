@@ -146,7 +146,7 @@ Luego en el Path, las agregamos (**No olvides separalas por ";" hasta el final**
 
 ### Cuando este todo instalado (El python setup.py install sea correcto)
 
-**IMPORTANTE*
+**IMPORTANTE**
 
 ### Instrucciones Unix
 
