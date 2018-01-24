@@ -38,7 +38,7 @@ Puedes instalar usando setup.py para hacerlo con todas las dependencias, usar pi
 pip install yowsup2
 ```
 
-O usar el esasy install
+O usar el easy install
 
 ```
 easy_install yowsup2
