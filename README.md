@@ -237,11 +237,11 @@ yowsup-master\yowsup\env\ **env.py** (Si env.py)
 
 Estaba asi:
 
-```DEFAULT = "android```
+```DEFAULT = "android"```
 
 Y debe ir ahora:
 
-```DEFAULT = "s40```
+```DEFAULT = "s40"```
 
 * Luego ya simplemente utilizamos los comando para los ejemplos, como por ejemplo:
 
