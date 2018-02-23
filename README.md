@@ -93,6 +93,24 @@ o para python 3:
 
 (Realmente esta parte trajo muchos problemas, solo fue posible hacerlo con el easy_install setup.py de Yowsup y teniendo instalado Python 3.5)
 
+Si tenemos problemas con el python-axolotl (o el curve), referente a:
+
+- ```unable find vcvarsall.bat```
+
+Debemos instalar las Visual C++ 2015 Build Tools:
+
+ > [https://landinghub.visualstudio.com/visual-cpp-build-tools](https://landinghub.visualstudio.com/visual-cpp-build-tools)
+ 
+Luego instalamos el modulo de Request:
+
+- Vamos a el Path de Python a la carpeta Scripts, he ingresamos:
+
+- ```easy_install.exe requests```
+
+- Para las imagenes, Vamos a el Path de Python a la carpeta Scripts, he ingresamos:
+
+- ```easy_install pillow```
+
 Y luego si podemos lanzar de nuevo el comando
 
 - ```python setup.py install```
@@ -128,7 +146,7 @@ Nuestro path, debe quedar configurado de la siguiente manera (La instalacion fue
 1. Nuestro **MINGW-HOME**  = *C:\MinGW*
 2. Nuestro **PYTHON_HOME** = *C:\Users\user\AppData\Local\Programs\Python\Python35-32*
 
-Es posible que pida igualmente alguna distribucion de C++ Compiler de Visual Studio.
+Es posible que pida igualmente alguna distribucion de C++ Compiler de Visual Studio (Esta es la que hacemos referencia con el error "unable find vcvarsall.bat").
 
 3. *(Opcional)*  **VCINSTALLDIR** = *C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC*
 
